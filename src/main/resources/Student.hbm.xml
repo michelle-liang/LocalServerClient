@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 30, 2015 12:51:40 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.itu.bean.Student" table="student" catalog="itu">
+        <id name="studentId" type="java.lang.Integer">
+            <column name="student_id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="60" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

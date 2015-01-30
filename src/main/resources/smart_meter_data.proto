@@ -1,0 +1,20 @@
+
+
+option java_package = "com.itu.localserver.client";
+option java_outer_classname = "SmartMeterDataProtos";
+
+message SmartMeter {
+  optional string name = 1;
+  optional int32 id = 2;
+  optional string ieeeAddress = 3;
+  optional string timestamp = 4;
+  optional float rms_V1 = 5;
+  optional float rms_I1 = 6;
+  optional float power = 7;
+  optional float accumulated_energy = 8;
+
+}
+
+message SmartMeterData {
+  repeated SmartMeter smart_meter = 1;
+}
